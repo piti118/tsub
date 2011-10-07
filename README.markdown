@@ -37,6 +37,7 @@ print exit_codes
 ```
 #Advance Usage:
 Sometimes, you may want to run two set of jobs. That is you want 4 data processing jobs in job set A to finish before starting running plotting jobs on set B. This can be accomplish quite easily by just running tsub.run twice.
+
 ```python
 import tsub
 jobs = ['./process 1','./process 2','./process 3']
