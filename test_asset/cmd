@@ -1,0 +1,8 @@
+python job1.py
+python job2.py
+python doesnotexist.py
+python failjob.py
+#comment should be ignore
+python job1.py
+python job1.py > out1.txt
+python job2.py > out2.txt
