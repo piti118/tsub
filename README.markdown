@@ -27,6 +27,7 @@ cmd file is as simple as
     ls
 
 If you want to use it as a python module, the only method you need is run. See tsub.py for more info on parameters.
+
     import tsub
     jobs = ['ls','du -h','date']
     #it returns a list of exit codes
