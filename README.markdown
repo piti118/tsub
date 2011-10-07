@@ -11,23 +11,24 @@ If you want to use it as a module, then copy it to either your project or somewh
 #Usage:
 There are two ways to use the script.
 Use as standalone. The second argument a file that lists commands. 
-    tsub.py cmd
-cmd file is as simple as
->	python job1.py
->	python job2.py
->	python fail.py
->	#this is comment redirection is also supported
->	python job2.py > out1.txt
->	python job1.py > out2.txt
->	#and it doesn't need to be python script
->	du -h
->	ls
-	
-If you want to use it as a python module, the only method you need is run. See tsub.py for more info on parameters.
-	import tsub
-	jobs = ['ls','du -h','date']
-	#it returns a list of exit codes
-	exit_codes = tsub.run(jobs)
-	print exit_codes
-	
 
+    tsub.py cmd
+
+cmd file is as simple as
+
+    python job1.py
+    python job2.py
+    python fail.py
+    #this is comment redirection is also supported
+    python job2.py > out1.txt
+    python job1.py > out2.txt
+    #and it doesn't need to be python script
+    du -h
+    ls
+
+If you want to use it as a python module, the only method you need is run. See tsub.py for more info on parameters.
+    import tsub
+    jobs = ['ls','du -h','date']
+    #it returns a list of exit codes
+    exit_codes = tsub.run(jobs)
+    print exit_codes
