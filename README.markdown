@@ -2,7 +2,7 @@
 tsub is a very simple batch system written in python. The purpose of this script is to make it easy to utilize all the cpu cores for embarrassingly parallel problems. It basically take a list of commands you want to run and make a process for each one of them while making sure that the number of jobs that is running does not exceed a specified number (defaulted to number of cores). It can be run as a standalone program or as a python module.
 
 #Requirement:
-tested on python 2.7 (anything beyond python 2.5 should work)
+Tested on python 2.7 (anything beyond python 2.5 should work)
 
 #Install:
 If you want to use it as a standalone link/copy tsub.py to /usr/bin or anywhere in your PATH.
