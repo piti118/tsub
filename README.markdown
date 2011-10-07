@@ -28,8 +28,19 @@ cmd file is as simple as
 
 If you want to use it as a python module, the only method you need is run. See tsub.py for more info on parameters.
 
-    import tsub
-    jobs = ['ls','du -h','date']
-    #it returns a list of exit codes
-    exit_codes = tsub.run(jobs)
-    print exit_codes
+```python
+import tsub
+jobs = ['ls','du -h','date']
+#it returns a list of exit codes
+exit_codes = tsub.run(jobs)
+print exit_codes
+```
+#Advance Usage:
+Sometimes, you may want to run two set of jobs. That is you want 4 data processing jobs in job set A to finish before starting running plotting jobs on set B. This can be accomplish quite easily by just running tsub.run twice.
+```python
+import tsub
+jobs = ['./process 1','./process 2','./process 3']
+tsub.run(jobs)
+jobs2 = ['./plot 1','./plot 2','./plot 3']
+tsub.run(jobs2)
+```
