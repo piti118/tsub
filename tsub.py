@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 import multiprocessing as mp
 import os
 import time
