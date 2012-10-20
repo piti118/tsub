@@ -5,15 +5,16 @@ tsub is a very simple batch system written in python. The purpose of this script
 Tested on python 2.7 (anything beyond python 2.5 should work)
 
 #Install:
-If you want to use it as a standalone link/copy tsub.py to /usr/bin or anywhere in your PATH.
+If you want to use it as a standalone link/copy tsub to /usr/bin or anywhere in your PATH.
 If you want to use it as a module, then copy it to either your project or somewhere in your PYTHON_PATH.
 
 #Usage:
 There are two ways to use the script. Standalone or as a module in python code.
+
 ##Standalone
 Use as standalone. The second argument a file that contains list of commands. 
 
-    tsub.py cmd
+    tsub cmd
 
 cmd file is as simple as
 
